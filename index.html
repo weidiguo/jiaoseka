@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="application-name" content="AI Character Editor">
+	<meta name="application-name" content="微帝国AI角色生成器">
 	<meta name="description" content="Create, edit and convert AI character files for CharacterAI, Pygmalion, Text Generation and TavernAI">
 	<meta name="version" content="0.5.0">
 	<meta name="revision" content="2023-02-06">
@@ -120,7 +120,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button class="accordion-button shadow-none fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-load">
-								<i class="bi bi-file-earmark-plus flex-shrink-0 me-2"></i> Load
+								<i class="bi bi-file-earmark-plus flex-shrink-0 me-2"></i> 创建
 							</button>
 						</h2>
 
@@ -132,9 +132,9 @@
 											<form id="load-form">
 												<i class="bi bi-cloud-upload display-2 text-primary"></i>
 
-												<p class="my-2">Drag &amp; drop a JSON or image file here<br><i>or</i></p>
+												<p class="my-2">在此次 &amp; 拖放 JSON 或 图片文件 在这里<br><i>or</i></p>
 
-												<label for="load" class="btn btn-primary stretched-link">Choose file...</label>
+												<label for="load" class="btn btn-primary stretched-link">选择文件...</label>
 												<input id="load" class="position-absolute invisible" type="file" accept="application/json, image/png">
 											</form>
 										</div>
@@ -142,9 +142,9 @@
 										<div class="col-6 py-5 position-relative border-start">
 											<i class="bi bi-file-earmark-plus display-2 text-primary"></i>
 
-											<p class="my-2">Start from scratch and create a new character<br><br></p>
+											<p class="my-2">从头开始，创建一个新的角色<br><br></p>
 
-											<button id="create" type="button" class="btn btn-primary stretched-link">New character</button>
+											<button id="create" type="button" class="btn btn-primary stretched-link">新角色</button>
 										</div>
 									</div>
 								</div>
@@ -155,7 +155,7 @@
 					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button class="accordion-button collapsed shadow-none fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-edit" disabled autocomplete="off">
-								<i class="bi bi-pencil flex-shrink-0 me-2"></i> Edit
+								<i class="bi bi-pencil flex-shrink-0 me-2"></i> 编辑角色
 							</button>
 						</h2>
 
@@ -200,7 +200,7 @@
 												</div>
 
 												<div class="row mt-3">
-													<div class="col-auto fst-italic">Name</div>
+													<div class="col-auto fst-italic">名字</div>
 													<div id="edit-original-name" class="col-auto ms-auto text-end text-break text-wrap"></div>
 												</div>
 
